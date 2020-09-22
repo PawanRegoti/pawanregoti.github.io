@@ -1,0 +1,13 @@
+:root {
+    --base-color: #131313;
+    --offset-color: #191919;
+    --blue-color: #09508a;
+    --bluegrey-color: #585858;
+    --grey-color: #d80505;
+    --lightgrey-color: #abaaaa;
+
+    --main-color: #bfb3b3;
+    --main-bg-img-color: #121111;
+    --main-bg-img-opacity: 0.8;
+    --footer-bg-color: #010608;
+}
