@@ -1,7 +1,7 @@
 :root {
     --base-color: #131313;
     --offset-color: #191919;
-    --blue-color: #09508a;
+    --blue-color: #2196F3;
     --bluegrey-color: #585858;
     --grey-color: #d80505;
     --lightgrey-color: #abaaaa;
@@ -9,5 +9,9 @@
     --main-color: #fff;
     --main-bg-img-color: #121111;
     --main-bg-img-opacity: 1;
-    --footer-bg-color: #383838;
+    --footer-bg-color: #000000;
+}
+
+.fa {
+    color: #fff;
 }
