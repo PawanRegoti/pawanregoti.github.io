@@ -37,6 +37,11 @@
 			}
 		})
 
+		$('#scroll_down').click(function () {
+			$("html, body").animate({ scrollTop: $(window).height() }, 600);
+			return false;
+		});
+
 		$.getJSON('https://cors-anywhere.herokuapp.com/https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US', function (data) {
 			if (data?.images[0]?.url != null) {
 				const bingImageUrl = `https://bing.com${data.images[0].url}` //
@@ -68,7 +73,7 @@
 		<div id="main-bg" class="background-image" style="background-image: url(assets/img/main.jpg);"></div>
 		<h1>Son, Brother and Full Stack Developer at Reviso</h1>
 		<h3>also Amateur traveler 🐱‍🏍</h3>
-		<i class="fa fa-chevron-down"></i>
+		<button id="scroll_down" class="button"><i class="fa fa-chevron-down"></i></button>
 	</section>
 
 
