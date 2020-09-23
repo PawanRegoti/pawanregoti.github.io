@@ -94,11 +94,12 @@ ul.grid{
 }
 
 .button{
-	font: normal 16px sans-serif;
+	font: normal 1em sans-serif;
 	color: inherit;
 	background-color: transparent;
 	border: none;
 	outline: none;
+	opacity: 0.9;
 }
 
 
