@@ -130,6 +130,7 @@ header nav{
 
 header nav li{
 	margin: 0 15px;
+	padding: 5px 0;
 }
 
 header nav li:first-child{
