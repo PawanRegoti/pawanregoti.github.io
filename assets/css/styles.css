@@ -449,7 +449,7 @@ footer p{
 }
 
 footer p a{
-	color: var(--base-color);
+	color: rgba(255,255,255,0.8);
 }
 
 @media (max-width: 700px){
