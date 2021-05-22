@@ -46,7 +46,7 @@
 			const defaultWallpaper = 'url("assets/img/main.jpg")';
 
 			if ($('div#main-bg')[0].style.backgroundImage == defaultWallpaper) {
-				$.getJSON('https://cors-anywhere.herokuapp.com/https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US', function (data) {
+				$.getJSON('https://bing-proxy.herokuapp.com/https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US', function (data) {
 					if (data?.images[0]?.url != null) {
 						const bingImageUrl = `https://bing.com${data.images[0].url}` //
 						console.log('wallpaper of the day: ', bingImageUrl)
