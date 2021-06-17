@@ -48,14 +48,14 @@
 			if ($('div#main-bg')[0].style.backgroundImage.includes(defaultWallpaperPath)) {
 				$.getJSON('https://bing-proxy.herokuapp.com/https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US', function (data) {
 					if (data?.images[0]?.url != null) {
-						const bingImageUrl = `https://bing.com${data.images[0].url}` //
+						const bingImageUrl = `https://bing.com${data.images[0].url}` // `
 						console.log('wallpaper of the day: ', bingImageUrl)
-						$('div#main-bg')[0].style.backgroundImage = `url(${bingImageUrl})`; //
+						$('div#main-bg')[0].style.backgroundImage = `url(${bingImageUrl})`; // `
 					}
 				});
 			}
 			else {
-				$('div#main-bg')[0].style.backgroundImage = `url(${defaultWallpaperPath})`;
+				$('div#main-bg')[0].style.backgroundImage = `url(${defaultWallpaperPath})`; // `
 			}
 		});
 	});
