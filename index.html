@@ -26,8 +26,19 @@
 </head>
 <script>
 	$(document).ready(function () {
+		let backend_exp_start_year = 2014
+		let frontend_exp_start_year = 2018
+		let cloud_exp_start_year = 2018
+		let current_year = new Date().getFullYear()
+		let current_company = 'Maersk'
+
+		$('#current_company').text(current_company)
+		$('#backend_exp').text(current_year - backend_exp_start_year)
+		$('#frontend_exp').text(current_year - frontend_exp_start_year)
+		$('#cloud_exp').text(current_year - cloud_exp_start_year)
+
 		$('#change_theme').click(function () {
-			if ($('link#color_src').attr('href') == "assets/css/dark-colors.css") {
+			if ($('link#color_src').attr('href') == 'assets/css/dark-colors.css') {
 				$('#change_theme').attr('value', 'Switch To Dark Mode')
 				$('link#color_src').attr('href', 'assets/css/light-colors.css')
 			}
@@ -84,7 +95,7 @@
 
 	<section class="main">
 		<div id="main-bg" class="background-image" style="background-image: url(assets/img/main.jpg);"></div>
-		<h1>Full Stack Developer at Maersk</h1>
+		<h1>Full Stack Developer at <span id="current_company">Maersk</span></h1>
 		<h3>also eternal learner 💻</h3>
 		<button id="scroll_down" class="button"><i class="fa fa-chevron-down"></i></button>
 	</section>
@@ -163,9 +174,10 @@
 	<section class="contact">
 		<h3 class="title">My professional life</h3>
 		<p>
-			I have 6+ years of experience with c# and 3+ years of experience with React and JavaScript.
-			2+ years of experience with azure and aws.
-			Enough powershell, teamcity and other CI/CD stuff to get by.
+			I have <span id="backend_exp">6</span>+ years of experience with c#
+			and <span id="frontend_exp">3</span>+ years of experience React, Angular, JavaScript etc.
+			<span id="cloud_exp">2</span>+ years of experience with azure, aws and heroku.
+			Enough powershell, bash, azure devops, teamcity and other CI/CD stuff to get by.
 			I am equally comfortable with both dotnet and nodejs.
 		</p>
 		<hr>
